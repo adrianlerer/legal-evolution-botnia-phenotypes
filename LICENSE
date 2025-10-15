@@ -1,0 +1,52 @@
+MIT License (Code) & Creative Commons Attribution 4.0 International (Data & Paper)
+
+================================================================================
+CODE LICENSE (MIT)
+================================================================================
+
+Copyright (c) 2025 [Author Name(s)]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+DATA & PAPER LICENSE (CC BY 4.0)
+================================================================================
+
+The dataset (data/), paper (paper/), figures (figures/), and appendices 
+(appendices/) are licensed under a Creative Commons Attribution 4.0 
+International License.
+
+You should have received a copy of the license along with this work. 
+If not, see <http://creativecommons.org/licenses/by/4.0/>.
+
+Attribution Requirements:
+- Give appropriate credit
+- Provide a link to the license
+- Indicate if changes were made
+
+You may do so in any reasonable manner, but not in any way that suggests 
+the licensor endorses you or your use.
+
+================================================================================
+FULL LICENSE TEXT
+================================================================================
+
+For complete license text, see:
+- MIT License: https://opensource.org/licenses/MIT
+- CC BY 4.0: https://creativecommons.org/licenses/by/4.0/legalcode

@@ -1,0 +1,20 @@
+# Python Dependencies for Figure Generation
+# International Law as Extended Phenotype
+# Compatible with Python 3.8+
+
+# Core data processing
+pandas>=1.3.0
+numpy>=1.21.0
+
+# Visualization
+matplotlib>=3.4.0
+seaborn>=0.11.0
+
+# Network analysis
+networkx>=2.6.0
+
+# Statistical tests
+scipy>=1.7.0
+
+# Optional: for reading Excel files
+openpyxl>=3.0.7

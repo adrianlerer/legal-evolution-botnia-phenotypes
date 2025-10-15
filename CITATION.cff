@@ -1,0 +1,67 @@
+cff-version: 1.2.0
+message: "If you use this dataset or code, please cite it as below."
+type: dataset
+title: "International Law as Extended Phenotype: Replication Materials"
+version: 1.0.0
+doi: 10.2139/ssrn.XXXXXXX
+date-released: 2025-10-15
+url: "https://github.com/adrianlerer/legal-evolution-botnia-phenotypes"
+repository-code: "https://github.com/adrianlerer/legal-evolution-botnia-phenotypes"
+keywords:
+  - international law
+  - extended phenotype
+  - propensity score matching
+  - sovereignty
+  - globalism
+  - legal institutions
+  - memetics
+  - evolutionary theory
+  - Botnia case
+  - ICJ
+  - ECJ
+authors:
+  - family-names: "[Last Name]"
+    given-names: "[First Name]"
+    email: "[email]"
+    affiliation: "[Institution]"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+abstract: >
+  This repository contains complete replication materials for the paper
+  "International Law as Extended Phenotype: A Propensity Score Matching 
+  Analysis of Legal Institutions in Sovereignty-Globalism Conflicts 
+  (2000-2025)". The paper applies the Extended Phenotype Framework 
+  (Dawkins 1982) to international law, analyzing legal institutions as 
+  extended phenotypes of competing memeplexes (Globalist vs Sovereigntist). 
+  Using Propensity Score Matching on 60 verified cases (30 CRISIS + 30 
+  CONTROL) from 2000-2025, we demonstrate that crisis-catalyzed legal 
+  conflicts produce measurably different institutional outcomes than 
+  baseline cooperation cases. The repository includes: (1) verified 60-case 
+  dataset with complete metadata and primary sources, (2) Python code for 
+  generating 7 publication-quality figures, (3) complete documentation 
+  including data codebook and verification sources, (4) appendices with 
+  extended methodology and PSM diagnostics.
+license: "MIT AND CC-BY-4.0"
+license-url: "https://github.com/adrianlerer/legal-evolution-botnia-phenotypes/blob/main/LICENSE"
+references:
+  - type: article
+    title: "The Extended Phenotype: The Long Reach of the Gene"
+    authors:
+      - family-names: "Dawkins"
+        given-names: "Richard"
+    year: 1982
+    publisher:
+      name: "Oxford University Press"
+  - type: article
+    title: "The central role of the propensity score in observational studies for causal effects"
+    authors:
+      - family-names: "Rosenbaum"
+        given-names: "Paul R."
+      - family-names: "Rubin"
+        given-names: "Donald B."
+    journal: "Biometrika"
+    year: 1983
+    volume: 70
+    issue: 1
+    start: 41
+    end: 55
+    doi: "10.1093/biomet/70.1.41"

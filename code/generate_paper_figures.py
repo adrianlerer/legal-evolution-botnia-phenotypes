@@ -200,7 +200,7 @@ def figure4_fitness_matrix(df):
     row_labels = ['Crisis\nConditions', 'Stable\nConditions', 'Mixed\nConditions']
     col_labels = ['Globalist\nStrategy', 'Sovereigntist\nStrategy', 'Hybrid\nStrategy']
     
-    fig, ax = plt.subplots(figsize=(10, 8))
+    fig, ax = plt.subplots(figsize=(11, 9))
     
     # Create heatmap
     im = ax.imshow(fitness_matrix, cmap='RdYlGn', aspect='auto', vmin=0, vmax=1)
@@ -208,31 +208,36 @@ def figure4_fitness_matrix(df):
     # Set ticks and labels
     ax.set_xticks(np.arange(len(col_labels)))
     ax.set_yticks(np.arange(len(row_labels)))
-    ax.set_xticklabels(col_labels, fontsize=11, fontweight='bold')
-    ax.set_yticklabels(row_labels, fontsize=11, fontweight='bold')
+    ax.set_xticklabels(col_labels, fontsize=12, fontweight='bold')
+    ax.set_yticklabels(row_labels, fontsize=12, fontweight='bold')
+    
+    # Rotate x labels and add padding
+    plt.setp(ax.get_xticklabels(), rotation=0, ha="center", rotation_mode="anchor")
+    ax.tick_params(axis='x', pad=10)
+    ax.tick_params(axis='y', pad=10)
     
     # Add text annotations
     for i in range(len(row_labels)):
         for j in range(len(col_labels)):
             text = ax.text(j, i, f'{fitness_matrix[i, j]:.2f}',
                           ha="center", va="center", color="black", 
-                          fontsize=14, fontweight='bold')
+                          fontsize=16, fontweight='bold')
     
     ax.set_title('Phenotypic Fitness Matrix: Institutional Strategy Success\n' + 
                  'by Environmental Conditions (Relative Fitness Scores)',
-                 fontweight='bold', fontsize=12, pad=20)
+                 fontweight='bold', fontsize=13, pad=25)
     
     # Add colorbar
     cbar = plt.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
-    cbar.set_label('Relative Fitness (0-1)', rotation=270, labelpad=20, fontweight='bold')
+    cbar.set_label('Relative Fitness (0-1)', rotation=270, labelpad=20, fontweight='bold', fontsize=11)
     
-    # Add note
+    # Add note at bottom with more space
     fig.text(0.5, 0.02, 
              'Note: Fitness = (Institutional Persistence × Goal Achievement) / Adaptation Cost\n' +
              'Based on Extended Phenotype Framework (Dawkins 1982) applied to legal institutions',
-             ha='center', fontsize=8, style='italic', wrap=True)
+             ha='center', fontsize=9, style='italic', wrap=True)
     
-    plt.tight_layout()
+    plt.tight_layout(rect=[0, 0.05, 1, 1])
     plt.savefig(FIGURES_DIR / 'figure4_fitness_matrix.png', dpi=300, bbox_inches='tight')
     print(f"✓ Saved: figure4_fitness_matrix.png")
     plt.close()

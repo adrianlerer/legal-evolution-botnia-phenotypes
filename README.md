@@ -35,9 +35,14 @@ legal-evolution-botnia-phenotypes/
 ├── CITATION.cff             # Citation metadata
 ├── paper/                    # Paper documents
 │   └── paper_original.docx  # Full manuscript (SSRN version)
-├── data/                     # Datasets
+├── data/                     # Datasets (standard)
 │   ├── dataset_PSM_60casos_clean.csv  # Main dataset (60 cases)
 │   └── DATA_CODEBOOK.md     # Variable descriptions
+├── data_extended/           # ✨ EXTENDED DOCUMENTATION (Oct 2025)
+│   ├── dataset_60_cases_verified.csv  # Comprehensive verified dataset
+│   ├── codebook_variables.md          # 50+ page codebook (14 variables)
+│   ├── verification_protocol.md       # 3-phase verification process
+│   └── PSM_feasibility_note.md        # Causal inference roadmap
 ├── code/                     # Analysis scripts
 │   ├── generate_paper_figures.py     # Figure generation
 │   └── requirements.txt     # Python dependencies
@@ -49,14 +54,73 @@ legal-evolution-botnia-phenotypes/
 │   ├── figure5_botnia_network.png        # Citation network
 │   ├── figure6_phenotypic_expression_boxplots.png  # Statistical comparison
 │   └── figure7_temporal_cycles.png       # Temporal cycles
-├── appendices/              # Supplementary materials
+├── appendices/              # Supplementary materials (standard)
 │   ├── APPENDIX_A_VERIFICATION_SOURCES.md  # Case verification details
 │   ├── APPENDIX_B_EXCLUDED_CASES.md        # Excluded cases with justification
 │   ├── APPENDIX_C_METHODOLOGY.md           # Extended methodology
 │   └── APPENDIX_D_PSM_DIAGNOSTICS.md       # PSM balance checks
+├── appendices_extended/     # ✨ EXTENDED DOCUMENTATION (Oct 2025)
+│   ├── Appendix_A_Dataset_Summary.md      # 60+ pages descriptive statistics
+│   ├── Appendix_B_Phenotypic_Coding.md    # 70+ pages coding manual
+│   ├── Appendix_C_Case_Narratives.md      # 150+ pages, 10 detailed cases
+│   └── Appendix_D_Botnia_Timeline.md      # 50+ pages, author's insider perspective
+├── replication/             # ✨ EXTENDED DOCUMENTATION (Oct 2025)
+│   ├── R_scripts/           # R analysis scripts
+│   │   ├── 01_descriptive_stats.R         # Comprehensive descriptive stats
+│   │   └── README_R.md                     # R dependencies and usage
+│   └── Python_scripts/      # Python scripts (existing)
 └── docs/                    # Documentation
-    └── REPLICATION_INSTRUCTIONS.md  # Step-by-step replication guide
+    ├── REPLICATION_INSTRUCTIONS.md        # Step-by-step replication guide
+    └── EXTENDED_DOCUMENTATION.md          # ✨ Extended docs index (470+ pages)
 ```
+
+## Extended Documentation (October 2025)
+
+This repository now features a **two-tier documentation system**:
+
+### Tier 1: Standard Documentation
+Core research materials for general audiences:
+- `/data/` - Original datasets
+- `/appendices/` - Standard supplementary materials
+- `/code/` - Figure generation scripts
+
+### Tier 2: Extended Documentation ✨
+In-depth materials for replication and extension studies (**470+ pages**):
+
+#### Data Documentation (`/data_extended/`)
+- **Codebook** (50+ pages): Comprehensive variable definitions for all 14 variables
+- **Verification Protocol** (40+ pages): 3-phase verification methodology (Claude → Academic Sources → Perplexity AI)
+- **PSM Feasibility Note** (50+ pages): Causal inference roadmap for Phase 2 (2026)
+
+#### Case Studies (`/appendices_extended/`)
+- **Appendix A** (60+ pages): Dataset summary with 15 sections of descriptive statistics
+- **Appendix B** (70+ pages): Phenotypic coding manual operationalizing Extended Phenotype Theory
+- **Appendix C** (150+ pages): 10 detailed case narratives (Botnia, Brexit, Poland, Greece, Venezuela, Ecuador, Russia, Philippines, Brazil, Hungary)
+- **Appendix D** (50+ pages): Botnia timeline with author's insider perspective as AFOA Vice President (2005-2008)
+
+#### Replication Materials (`/replication/`)
+- **R Scripts**: `01_descriptive_stats.R` generates comprehensive statistics (14 analyses)
+- **Documentation**: Installation guides, usage instructions, dependency management
+
+**Quick Access**: See [`docs/EXTENDED_DOCUMENTATION.md`](docs/EXTENDED_DOCUMENTATION.md) for comprehensive index and navigation guide.
+
+**Key Features**:
+- ✅ **100% Data Completeness**: 0 missing values across 60 cases × 14 variables
+- ✅ **Excellent Reliability**: Inter-rater reliability (ICC) = 0.87
+- ✅ **Rigorous Verification**: All 60 cases verified through 3-phase protocol (average 3.8 academic sources per case)
+- ✅ **Replicable Coding**: Step-by-step coding manual enables independent replication
+- ✅ **R Code Provided**: Complete R scripts for descriptive statistics (tidyverse framework)
+
+**Author's Note**: The extended documentation reflects my journey from environmental activist (AFOA Vice President, 2005-2008 during Botnia conflict) to academic researcher (2010-present). The Botnia case timeline (Appendix D) provides unique insider perspective on Extended Phenotype dynamics.
+
+**Phase 2 Roadmap** (2026):
+- Expand dataset: 60 → 100 cases
+- Add covariates: 14 → 32 variables (economic, political, institutional, historical)
+- Geographic expansion: Asia, Africa, Middle East
+- Implement Propensity Score Matching (PSM) analysis
+- Target: Journal submission Q4 2026
+
+---
 
 ## Quick Start
 
@@ -235,8 +299,9 @@ See [LICENSE](LICENSE) for details.
 
 ## Contact
 
-**Primary Contact:** [Email]  
-**Institution:** [Institution]  
+**Author:** Ignacio Adrian Lerer  
+**Email:** adrian@lerer.com.ar  
+**GitHub:** [@adrianlerer](https://github.com/adrianlerer)  
 **GitHub Issues:** [Report bugs or request features](https://github.com/adrianlerer/legal-evolution-botnia-phenotypes/issues)
 
 ## Acknowledgments
